@@ -24,24 +24,9 @@ module.exports = {
         background_color: `#f9f8eb`,
         theme_color: `#664131`,
         display: `standalone`,
-        icon: `src/images/icon-512.png`,/* 
-        icons: [
-          {
-            src: '/src/images/icon-192.png',
-            type: 'image/png',
-            sizes: '192x192'
-          },
-          {
-            src: '/src/images/icon-512.png',
-            type: 'image/png',
-            sizes: '512x512'
-          }
-        ] */
+        icon: `src/images/icon-512.png`
       },
     },
     'gatsby-plugin-sass'
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }
