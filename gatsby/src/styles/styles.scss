@@ -73,6 +73,9 @@ figcaption {
     &:hover, &:active {
         fill: $primary;
     }
+    .platform-icon {
+        width: 100%;
+    }
 }
 
 .is-emphasized {
