@@ -3,7 +3,7 @@ import React from 'react';
 import Img from 'gatsby-image';
 
 const Work = ({title, image, description, tags, link}) => (
-    <div className="tile is-child card">
+    <div className="card">
         <div className="card-image">
             <figure className="image">
                 <Img fluid={image}/>

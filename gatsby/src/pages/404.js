@@ -6,8 +6,17 @@ import "../styles/styles.scss";
 const NotFoundPage = () => (
   <>
     <SEO title="404" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <section className="hero is-fullheight is-bold">
+      <div className="hero-body">
+        <div className="container has-text-centered">
+          <h1 className="title is-1">Sorry!</h1>
+          <h2 className="subtitle">I can't find what you're looking.</h2>
+          <div className="buttons are-large is-centered">
+            <a href="../" className="button is-primary is-rounded">Go back?</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </>
 )
 

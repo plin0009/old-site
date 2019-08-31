@@ -1,4 +1,29 @@
 @charset "utf-8";
+@font-face {
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Livvic Light'), local('Livvic-Light'),
+         url('../fonts/livvic-v2-latin-300.woff2') format('woff2'),
+         url('../fonts/livvic-v2-latin-300.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Livvic Regular'), local('Livvic-Regular'),
+         url('../fonts/livvic-v2-latin-regular.woff2') format('woff2'),
+         url('../fonts/livvic-v2-latin-regular.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Livvic Medium'), local('Livvic-Medium'),
+         url('../fonts/livvic-v2-latin-500.woff2') format('woff2'),
+         url('../fonts/livvic-v2-latin-500.woff') format('woff');
+  }
+  
 
 $orange: #ff5700;
 $light-beige: #f9f8eb;
@@ -7,25 +32,25 @@ $light-brown: #ad6f53;
 $brown: #664131;
 $size-1: 5rem;
 $size-2: 3.5rem;
-$family-sans-serif: 'Aller', sans-serif;
+$family-sans-serif: 'Livvic', sans-serif;
 $weight-normal: 400;
 
 $primary: $orange;
 $dark: $dark-beige;
-$info: $light-brown;
+$text: $light-brown;
 $body-background-color: $light-beige;
+$box-background-color: $dark;
+$card-background-color: $dark;
+$tag-background-color: $light-beige;
+
+$button-background-color: $dark-beige;
+$button-color: $light-brown;
 
 $title-color: $brown;
 $title-weight: $weight-normal;
-
 $subtitle-color: $light-brown;
 
 @import "../../node_modules/bulma/bulma.sass";
-
-
-.is-orange {
-    color: $orange;
-}
 
 figcaption {
     position: absolute;
@@ -36,10 +61,31 @@ figcaption {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: $white;
+    background-color: $card-background-color;
     opacity: 0;
     transition: 200ms;
     &:hover, &:active {
         opacity: 1;
     }
+}
+.platform-symbol {
+    fill: $text;
+    &:hover, &:active {
+        fill: $primary;
+    }
+}
+
+.is-emphasized {
+    @extend .has-text-primary, .has-text-weight-medium ;
+}
+
+.flex-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.is-filtered-brown {
+    filter: invert(24%) sepia(33%) saturate(739%) hue-rotate(333deg) brightness(94%) contrast(86%);
+    filter: invert(48%) sepia(35%) saturate(626%) hue-rotate(334deg) brightness(92%) contrast(83%);
 }
