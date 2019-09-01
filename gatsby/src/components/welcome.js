@@ -17,12 +17,10 @@ const Welcome = ({ passion }) => (
 );
 
 Welcome.propTypes = {
-    name: PropTypes.string,
     passion: PropTypes.string
 };
 
 Welcome.defaultProps = {
-    name: '',
     passion: '',
 };
 

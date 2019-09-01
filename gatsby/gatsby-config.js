@@ -10,7 +10,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `cards`,
-        path: `${__dirname}/src/images/cards`,
+        path: `${__dirname}/src/assets/images/cards`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#f9f8eb`,
         theme_color: `#664131`,
         display: `standalone`,
-        icon: `src/images/icon-512.png`
+        icon: `src/assets/images/icon-512.png`
       },
     },
     'gatsby-plugin-sass'

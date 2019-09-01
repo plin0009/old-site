@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
-import profile from '../images/profile.svg';
+import profile from '../assets/images/profile.svg';
 
 const About = ({ children }) => (
     <section className="section" id="about">

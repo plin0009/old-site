@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 import React from "react";
-
-import Work from './work';
 import { useStaticQuery } from "gatsby";
 import { graphql } from "gatsby";
+
+import Work from './work';
 
 const Showcase = ({works}) => {
     const data = useStaticQuery(graphql`
