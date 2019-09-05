@@ -35,7 +35,8 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "custom-domain": "echo 'peterlin.me' >public/CNAME",
+    "deploy": "gatsby build && npm run custom-domain && gh-pages -d public -b master"
   },
   "repository": {
     "type": "git",
